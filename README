@@ -1,0 +1,26 @@
+Panorama Stitching
+===========================
+Shivam Mittal
+2015CSB1032
+
+Abstract
+---------
+The task was to create a panorama stitching for two images. The
+program takes in 2 input images and lets the user select 4 points in both
+the images. Then the homography matrix for the projective transformation was computed, 
+and one image was warped using the computer projective transformation. Then using the warped 
+image, we stitched both images to get a mosaic.
+
+Please read the report for more details.
+
+
+Running
+--------
+Open matlab, read 2 images in the command window by using imread.
+Then call the computehomography function.
+
+image1 = imread('Image1.JPG');
+image2 = imread('Image2.JPG');
+ComputeHomography_2015CSB1032(image1, image2);
+
+The warped image and the stitched image would be saved in the folder.
